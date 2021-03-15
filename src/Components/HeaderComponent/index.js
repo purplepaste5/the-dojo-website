@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu, Layout } from 'antd';
+import { Link } from 'react-router-dom';
 
 const { Header } = Layout;
 
@@ -11,10 +12,19 @@ const HeaderComponent = () => {
         theme="dark"
         mode="horizontal"
         defaultSelectedKeys={['2']}
+        style={{ textAlign: 'center' }}
       >
-        <Menu.Item key="1">nav 1</Menu.Item>
-        <Menu.Item key="2">nav 2</Menu.Item>
-        <Menu.Item key="3">nav 3</Menu.Item>
+        <Menu.Item key="1">
+          {' '}
+          <Link to="/jacob">Jacob</Link>
+        </Menu.Item>
+        <Menu.Item key="2">
+          <Link to="/">The Dojo</Link>
+        </Menu.Item>
+        <Menu.Item key="3">
+          {' '}
+          <Link to="/ski">Ski</Link>
+        </Menu.Item>
       </Menu>
     </Header>
   );
