@@ -1,12 +1,15 @@
 import React from 'react';
 import { Parallax, Background } from 'react-parallax';
-import skiImage from '../../Resources/andrew-image-wide.jpg';
+import skiImage from '../../Resources/andrew-side-image-2.jpg';
+import { insideStyles } from '../TheDojo';
+
+const styles = { ...insideStyles, color: 'white' };
 
 const Ski = () => {
   return (
-    <Parallax bgImage={skiImage} strength={500}>
-      <div style={{ height: 1000 }}>
-        <div>HTML inside the parallax</div>
+    <Parallax bgImage={skiImage}>
+      <div style={{ height: 700 }}>
+        <div style={styles}>Welcome to Ski's Dojo</div>
       </div>
     </Parallax>
   );
