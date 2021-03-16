@@ -6,6 +6,7 @@ import {
   HomeOutlined,
 } from '@ant-design/icons';
 import { useLocation, withRouter } from 'react-router-dom';
+import { StratIcon } from '../GuitarIcon';
 
 const { SubMenu } = Menu;
 const { Sider } = Layout;
@@ -21,7 +22,7 @@ const SideMenu = () => {
     >
       <div className="logo" />
       <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-        <Menu.Item key="1" icon={<HomeOutlined />}>
+        <Menu.Item key="1" icon={<StratIcon />}>
           Option 1
         </Menu.Item>
         <Menu.Item key="2" icon={<HomeOutlined />}>
