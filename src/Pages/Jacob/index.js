@@ -1,5 +1,5 @@
 import React from 'react';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 import jacobImage from '../../Resources/jacob-side-image.jpg';
 import { insideStyles } from '../TheDojo';
 

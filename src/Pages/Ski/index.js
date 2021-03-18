@@ -1,5 +1,5 @@
 import React from 'react';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 import skiImage from '../../Resources/andrew-side-image-2.jpg';
 import { insideStyles } from '../TheDojo';
 

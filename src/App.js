@@ -11,14 +11,10 @@ import FooterComponent from './Components/FooterComponent';
 import Jacob from './Pages/Jacob';
 import TheDojo from './Pages/TheDojo';
 import Ski from './Pages/Ski';
-import { HomeOutlined } from '@ant-design/icons';
 import SideMenu from './Components/SideMenu';
 const { Content, Sider } = Layout;
-const { SubMenu } = Menu;
 
 export default function App() {
-  const [siderCollapsed, toggleSider] = useState(true);
-
   return (
     <Router>
       <Layout className="layout">
@@ -37,9 +33,9 @@ export default function App() {
                 <Ski />
               </Route>
             </Switch>{' '}
+            <FooterComponent />
           </Content>
         </Layout>
-        <FooterComponent />
       </Layout>
     </Router>
   );

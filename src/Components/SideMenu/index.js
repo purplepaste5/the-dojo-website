@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, Layout } from 'antd';
-import {
-  UserOutlined,
-  LaptopOutlined,
-  HomeOutlined,
-} from '@ant-design/icons';
-import { useLocation, withRouter } from 'react-router-dom';
+import { HomeOutlined } from '@ant-design/icons';
 import { StratIcon } from '../GuitarIcon';
 
 const { SubMenu } = Menu;
@@ -13,7 +8,6 @@ const { Sider } = Layout;
 
 const SideMenu = () => {
   const [siderCollapsed, toggleSider] = useState(true);
-  const location = useLocation();
   return (
     <Sider
       collapsible
