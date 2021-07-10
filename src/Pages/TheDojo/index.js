@@ -45,16 +45,20 @@ const TheDojo = () => {
 
             {index < images.length - 1 ? (
               <SlantendTextContainer>
-                <DojoExplanation
+                {index === 0 ? (
+                  <DojoExplanation
                   title="The Dojo"
                   description="A Dojo, by definition, is a place of the Way. 
                   The Way being a concept developed by Taoists and Buddhists alike. 
                   A Dojo is a place of love, light, and insight. A Dojo is also a place of despair, darkness, and change. 
-                  The World is a Dojo, accepting, renewing, or revoking membership through a network of possibility. And through that network emerges awareness.
-                  We are the eyes of the world. The World's Dojo is ours to foster and ours to destroy."
+                  The World is a Dojo, accepting, renewing, or revoking membership through a network of possibility; and from that network emerges awareness.
+                  We are the eyes of the world. The Dojo is ours to foster and ours to destroy."
                 >
                   {' '}
                 </DojoExplanation>
+
+                ) : ''}
+                
               </SlantendTextContainer>
             ) : (
               ''
